@@ -1,23 +1,17 @@
 import Link from "next/link";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
-    <header className="p-8">
-      <ul className="flex flex-row justify-evenly">
-        <li>
+    <>
+      <header>
+        <nav className="flex space-x-4 items-center">
           <Link href="/">Blog</Link>
-        </li>
-        <li>
           <Link href="/">Project</Link>
-        </li>
-        <li>
           <Link href="/">About</Link>
-        </li>
-        <li>
           <Link href="/">Contact</Link>
-        </li>
-      </ul>
-    </header>
+        </nav>
+      </header>
+    </>
   );
 };
 
