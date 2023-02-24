@@ -3,14 +3,15 @@ import Link from "next/link";
 const Header: React.FC = () => {
   return (
     <>
-      <header>
-        <nav className="flex space-x-4 items-center">
+      <div>
+        <header className="grid grid-cols-2 md:grid-cols-4 place-items-center">
           <Link href="/">Blog</Link>
-          <Link href="/">Project</Link>
+          <Link href="/">Projects</Link>
           <Link href="/">About</Link>
           <Link href="/">Contact</Link>
-        </nav>
-      </header>
+        </header>
+      </div>
+      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
     </>
   );
 };
